@@ -18,7 +18,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Overview
 
-In this challenge, I will be continuing my focus on semantically correct HTML, accessibility, and responsive Less CSS.
+In this challenge, I will be continuing my focus on semantically correct HTML, accessibility, responsive Less CSS, and BEM.
 
 ### The challenge
 
