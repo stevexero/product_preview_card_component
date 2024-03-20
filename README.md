@@ -45,7 +45,7 @@ Users should be able to:
 - Added semantic HTML tags
 - Set up Less
 - Set up CSS Reset
-- Set up fonts, colors, and root variables (config)
+- Set up typography config
 
 ### Built with
 

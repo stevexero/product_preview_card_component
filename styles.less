@@ -1,37 +1,65 @@
 @import 'reset';
 @import 'typographyConfig';
+@import 'colorsConfig';
+
+body {
+  background-color: @background-main;
+}
 
 .product-card {
+  background-color: @card-background;
+
   .product-card__image-wrapper-desktop {
     display: none;
   }
 
   .product-card__tag {
     #bundle.tag();
+    color: @tag-color;
     text-decoration: none;
   }
 
   .product-card__title {
     #bundle.heading();
+    color: @heading-color;
   }
 
   .product-card__text {
     #bundle.body();
+    color: @body-color;
   }
 
   .product-card__price--sale {
     #bundle.pricing();
+    color: @price-color;
   }
 
   .product-card__price--original {
     #bundle.old-pricing();
+    color: @old-price-color;
   }
 
   .product-card__button {
     #bundle.button();
+    background-color: @button-bg;
+    color: @button-text;
+
+    &:hover {
+      background-color: @button-hover-bg;
+      cursor: pointer;
+    }
+
+    &:focus {
+      background-color: @button-hover-bg;
+    }
   }
 }
 
 .attribution {
   #bundle.footer();
+  color: @footer-color;
+
+  a {
+    color: @footer-link-color;
+  }
 }

@@ -2574,6 +2574,12 @@ html {
   letter-spacing: 0;
   line-height: normal;
 }
+body {
+  background-color: #f2eae2;
+}
+.product-card {
+  background-color: #ffffff;
+}
 .product-card .product-card__image-wrapper-desktop {
   display: none;
 }
@@ -2583,6 +2589,7 @@ html {
   font-size: 0.857em;
   letter-spacing: 5px;
   line-height: normal;
+  color: #6c7289;
   text-decoration: none;
 }
 .product-card .product-card__title {
@@ -2591,6 +2598,7 @@ html {
   font-size: 2.286em;
   letter-spacing: 0;
   line-height: 32px;
+  color: #1c232b;
 }
 .product-card .product-card__text {
   font-family: 'Montserrat', sans-serif;
@@ -2598,6 +2606,7 @@ html {
   font-size: 1em;
   letter-spacing: 0;
   line-height: 23px;
+  color: #6c7289;
 }
 .product-card .product-card__price--sale {
   font-family: 'Fraunces', serif;
@@ -2605,6 +2614,7 @@ html {
   font-size: 2.286em;
   letter-spacing: 0;
   line-height: 32px;
+  color: #3d8168;
 }
 .product-card .product-card__price--original {
   font-family: 'Montserrat', sans-serif;
@@ -2612,6 +2622,7 @@ html {
   font-size: 0.929em;
   letter-spacing: 0;
   line-height: 23px;
+  color: #3d8168;
 }
 .product-card .product-card__button {
   font-family: 'Montserrat', sans-serif;
@@ -2619,6 +2630,15 @@ html {
   font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
+  background-color: #3d8168;
+  color: #ffffff;
+}
+.product-card .product-card__button:hover {
+  background-color: #1a4032;
+  cursor: pointer;
+}
+.product-card .product-card__button:focus {
+  background-color: #1a4032;
 }
 .attribution {
   font-family: 'Montserrat', sans-serif;
@@ -2626,4 +2646,8 @@ html {
   font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
+  color: #8a735b;
+}
+.attribution a {
+  color: #4d3e2e;
 }
