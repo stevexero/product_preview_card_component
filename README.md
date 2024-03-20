@@ -44,6 +44,8 @@ Users should be able to:
 - Initialized Git and Github
 - Added semantic HTML tags
 - Set up Less
+- Set up CSS Reset
+- Set up fonts, colors, and root variables (config)
 
 ### Built with
 
@@ -54,11 +56,14 @@ Users should be able to:
 
 ### What I learned
 
+- I learned how to use Less
+
 ### Continued development
 
 ### Useful resources
 
 - [Less Documentation](https://lesscss.org/)
+- [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 
 ## Author
 

@@ -1,0 +1,37 @@
+@import 'reset';
+@import 'typographyConfig';
+
+.product-card {
+  .product-card__image-wrapper-desktop {
+    display: none;
+  }
+
+  .product-card__tag {
+    #bundle.tag();
+    text-decoration: none;
+  }
+
+  .product-card__title {
+    #bundle.heading();
+  }
+
+  .product-card__text {
+    #bundle.body();
+  }
+
+  .product-card__price--sale {
+    #bundle.pricing();
+  }
+
+  .product-card__price--original {
+    #bundle.old-pricing();
+  }
+
+  .product-card__button {
+    #bundle.button();
+  }
+}
+
+.attribution {
+  #bundle.footer();
+}
