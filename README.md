@@ -18,7 +18,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Overview
 
-In this challenge, I will be continuing my focus on semantically correct HTML, accessibility, and responsive CSS.
+In this challenge, I will be continuing my focus on semantically correct HTML, accessibility, and responsive Less CSS.
 
 ### The challenge
 
@@ -41,13 +41,15 @@ Users should be able to:
 - Copied over starter files from project folder
 - Initialized Git and GitHub
 - Analyzed Figma design file
+- Initialized Git and Github
+- Added semantic HTML tags
+- Set up Less
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Less
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
@@ -56,8 +58,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Less Documentation](https://lesscss.org/)
 
 ## Author
 
