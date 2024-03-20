@@ -46,6 +46,7 @@ Users should be able to:
 - Set up Less
 - Set up CSS Reset
 - Set up typography config
+- Set up colors config
 
 ### Built with
 
