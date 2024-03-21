@@ -51,6 +51,7 @@ Users should be able to:
 - Add base styling desktop
 - a11y check: zoom (scale content if user sets font-size to 200%, 300%, etc)
 - a11y check: interactive elements (tooltips with mouse & keyboard)
+- a11y check: Semantic HTML and screen readers (not yet done)
 
 ### Built with
 
