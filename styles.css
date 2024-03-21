@@ -2468,11 +2468,12 @@ html {
   extra-small: 0.857em;
 }
 #font-weights {
-  bold: 600;
+  bold: 800;
   medium: 400;
 }
 #text-tracking {
   wide: 5px;
+  semi-wide: 2.2px;
   normal: 0;
 }
 #text-leading {
@@ -2500,18 +2501,18 @@ html {
 }
 #font-weight {
   tag: 400;
-  heading: 600;
+  heading: 800;
   body: 400;
-  pricing: 600;
+  pricing: 800;
   old-pricing: 400;
-  button: 600;
-  footer: 600;
+  button: 800;
+  footer: 800;
 }
 #tracking {
   tag: 5px;
-  heading: 0;
+  heading: 2.2px;
   body: 0;
-  pricing: 0;
+  pricing: 2.2px;
   old-pricing: 0;
   button: 0;
   footer: 0;
@@ -2534,9 +2535,9 @@ html {
 }
 #bundle .heading {
   font-family: 'Fraunces', serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.286em;
-  letter-spacing: 0;
+  letter-spacing: 2.2px;
   line-height: 32px;
 }
 #bundle .body {
@@ -2548,9 +2549,9 @@ html {
 }
 #bundle .pricing {
   font-family: 'Fraunces', serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.286em;
-  letter-spacing: 0;
+  letter-spacing: 2.2px;
   line-height: 32px;
 }
 #bundle .old-pricing {
@@ -2562,14 +2563,14 @@ html {
 }
 #bundle .button {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
 }
 #bundle .footer {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
@@ -2613,12 +2614,12 @@ body {
 }
 .product-card .product-card__title {
   font-family: 'Fraunces', serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.286em;
-  letter-spacing: 0;
+  letter-spacing: 2.2px;
   line-height: 32px;
   color: #1c232b;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 .product-card .product-card__text {
   font-family: 'Montserrat', sans-serif;
@@ -2631,12 +2632,15 @@ body {
 }
 .product-card .product-card__pricing {
   margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .product-card .product-card__price--sale {
   font-family: 'Fraunces', serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.286em;
-  letter-spacing: 0;
+  letter-spacing: 2.2px;
   line-height: 32px;
   color: #3d8168;
 }
@@ -2646,20 +2650,21 @@ body {
   font-size: 0.929em;
   letter-spacing: 0;
   line-height: 23px;
-  color: #3d8168;
-  margin-left: 20px;
+  color: #6c7289;
+  margin-left: 16px;
+  text-decoration: line-through;
 }
 .product-card .product-card__footer {
   margin-top: 24px;
 }
 .product-card .product-card__button {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
   width: 100%;
-  padding: 15px 0;
+  padding: 16px;
   background-color: #3d8168;
   color: #ffffff;
   border: none;
@@ -2681,7 +2686,7 @@ body {
 }
 .attribution {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
