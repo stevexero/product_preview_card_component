@@ -62,7 +62,11 @@
               title="Add Gabrielle Essence Eau De Parfum to cart"
             >
               <img src="/images/icon-cart.svg" alt="" />
-              <span>Add to Cart</span>
+              <span
+                >Add to Cart<span class="product-card__tooltip-text"
+                  >Click to add the item to your shopping cart</span
+                ></span
+              >
             </button>
           </footer>
         </div>
@@ -81,5 +85,28 @@
         >Steve Xero</a
       >.
     </footer>
+
+    <script>
+      document.querySelectorAll('.product-card__button').forEach((button) => {
+        button.addEventListener('keydown', (e) => {
+          if (e.key === 'Tab') {
+            button.classList.add('show-tooltip');
+          }
+        });
+
+        button.addEventListener('mousedown', (e) => {
+          e.preventDefault();
+        });
+
+        button.addEventListener('click', () => {
+          button.classList.remove('show-tooltip');
+          alert('Item added to cart');
+        });
+
+        button.addEventListener('blur', () => {
+          button.classList.remove('show-tooltip');
+        });
+      });
+    </script>
   </body>
 </html>

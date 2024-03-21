@@ -127,6 +127,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     &:hover {
       background-color: @button-hover-bg;
@@ -136,10 +137,33 @@ body {
     &:focus {
       background-color: @button-hover-bg;
     }
+
+    &:focus .product-card__tooltip-text,
+    &.show-tooltip .product-card__tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   .product-card__button span {
     margin-left: 11px;
+  }
+
+  .product-card__tooltip-text {
+    font-weight: 200;
+    visibility: hidden;
+    width: 400px;
+    background-color: rgb(63, 63, 63);
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: -30%;
+    opacity: 0;
+    transition:
+      visibility 0s,
+      opacity 0.2s linear;
   }
 }
 

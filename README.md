@@ -49,7 +49,8 @@ Users should be able to:
 - Set up colors config
 - Add base styling mobile
 - Add base styling desktop
-- a11y check: zoom
+- a11y check: zoom (scale content if user sets font-size to 200%, 300%, etc)
+- a11y check: interactive elements (tooltips with mouse & keyboard)
 
 ### Built with
 
@@ -61,6 +62,7 @@ Users should be able to:
 ### What I learned
 
 - I learned how to use Less
+- I learned how to add a tooltip on an element when it's focus from the keyboard
 
 ### Continued development
 
