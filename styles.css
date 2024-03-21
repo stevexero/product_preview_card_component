@@ -2588,20 +2588,44 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
 }
+@media (min-width: 38em) {
+  .product-card {
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 38em) {
+  .product-card .product-card__image-wrapper-mobile {
+    display: none;
+  }
+}
 .product-card .product-card__image-wrapper-desktop {
   display: none;
+}
+@media (min-width: 38em) {
+  .product-card .product-card__image-wrapper-desktop {
+    display: block;
+  }
 }
 .product-card .product-card__image {
   border-radius: 10px 10px 0 0;
   object-fit: contain;
 }
-@media (min-width: 54em) {
+@media (min-width: 38em) {
   .product-card .product-card__image {
     border-radius: 10px 0 0 10px;
   }
 }
 .product-card .product-card__content-container {
   padding: 24px;
+}
+@media (min-width: 38em) {
+  .product-card .product-card__content-container {
+    padding: 32px;
+    align-self: center;
+  }
 }
 .product-card .product-card__tag {
   font-family: 'Montserrat', sans-serif;
@@ -2621,6 +2645,11 @@ body {
   color: #1c232b;
   margin-top: 8px;
 }
+@media (min-width: 38em) {
+  .product-card .product-card__title {
+    margin-top: 16px;
+  }
+}
 .product-card .product-card__text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -2630,11 +2659,21 @@ body {
   color: #6c7289;
   margin-top: 16px;
 }
+@media (min-width: 38em) {
+  .product-card .product-card__text {
+    margin-top: 24px;
+  }
+}
 .product-card .product-card__pricing {
   margin-top: 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media (min-width: 38em) {
+  .product-card .product-card__pricing {
+    margin-top: 28px;
+  }
 }
 .product-card .product-card__price--sale {
   font-family: 'Fraunces', serif;
@@ -2656,6 +2695,11 @@ body {
 }
 .product-card .product-card__footer {
   margin-top: 24px;
+}
+@media (min-width: 38em) {
+  .product-card .product-card__footer {
+    margin-top: 28px;
+  }
 }
 .product-card .product-card__button {
   font-family: 'Montserrat', sans-serif;

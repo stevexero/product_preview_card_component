@@ -47,7 +47,8 @@ Users should be able to:
 - Set up CSS Reset
 - Set up typography config
 - Set up colors config
-- Add base styling for mobile
+- Add base styling mobile
+- Add base styling desktop
 
 ### Built with
 
