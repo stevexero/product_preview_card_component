@@ -2575,13 +2575,32 @@ html {
   line-height: normal;
 }
 body {
+  min-height: 100vh;
+  padding: 16px;
   background-color: #f2eae2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .product-card {
   background-color: #ffffff;
+  border-radius: 10px;
 }
 .product-card .product-card__image-wrapper-desktop {
   display: none;
+}
+.product-card .product-card__image {
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+}
+@media (min-width: 54em) {
+  .product-card .product-card__image {
+    border-radius: 10px 0 0 10px;
+  }
+}
+.product-card .product-card__content-container {
+  padding: 24px;
 }
 .product-card .product-card__tag {
   font-family: 'Montserrat', sans-serif;
@@ -2599,6 +2618,7 @@ body {
   letter-spacing: 0;
   line-height: 32px;
   color: #1c232b;
+  margin-top: 12px;
 }
 .product-card .product-card__text {
   font-family: 'Montserrat', sans-serif;
@@ -2607,6 +2627,10 @@ body {
   letter-spacing: 0;
   line-height: 23px;
   color: #6c7289;
+  margin-top: 16px;
+}
+.product-card .product-card__pricing {
+  margin-top: 24px;
 }
 .product-card .product-card__price--sale {
   font-family: 'Fraunces', serif;
@@ -2623,6 +2647,10 @@ body {
   letter-spacing: 0;
   line-height: 23px;
   color: #3d8168;
+  margin-left: 20px;
+}
+.product-card .product-card__footer {
+  margin-top: 24px;
 }
 .product-card .product-card__button {
   font-family: 'Montserrat', sans-serif;
@@ -2630,8 +2658,16 @@ body {
   font-size: 1em;
   letter-spacing: 0;
   line-height: normal;
+  width: 100%;
+  padding: 15px 0;
   background-color: #3d8168;
   color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .product-card .product-card__button:hover {
   background-color: #1a4032;
@@ -2640,6 +2676,9 @@ body {
 .product-card .product-card__button:focus {
   background-color: #1a4032;
 }
+.product-card .product-card__button span {
+  margin-left: 11px;
+}
 .attribution {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -2647,6 +2686,9 @@ body {
   letter-spacing: 0;
   line-height: normal;
   color: #8a735b;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
 .attribution a {
   color: #4d3e2e;
