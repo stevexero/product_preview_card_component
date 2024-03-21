@@ -19,7 +19,7 @@ body {
 
   @media (min-width: @breakpoint-small) {
     width: 600px;
-    height: 450px;
+    min-width: 14em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -34,15 +34,17 @@ body {
     display: none;
 
     @media (min-width: @breakpoint-small) {
+      height: 100%;
       display: block;
     }
   }
 
   .product-card__image {
     border-radius: @border-radius-img-mobile;
-    object-fit: contain;
+    object-fit: cover;
 
     @media (min-width: @breakpoint-small) {
+      height: 100%;
       border-radius: @border-radius-img-desktop;
     }
   }

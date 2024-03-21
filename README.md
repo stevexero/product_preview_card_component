@@ -49,6 +49,7 @@ Users should be able to:
 - Set up colors config
 - Add base styling mobile
 - Add base styling desktop
+- a11y check: zoom
 
 ### Built with
 

@@ -2478,8 +2478,8 @@ html {
 }
 #text-leading {
   auto: normal;
-  large: 32px;
-  medium: 23px;
+  large: 2.286rem;
+  medium: 1.643rem;
 }
 #font-family {
   tag: 'Montserrat', sans-serif;
@@ -2497,7 +2497,7 @@ html {
   pricing: 2.286em;
   old-pricing: 0.929em;
   button: 1em;
-  footer: 1em;
+  footer: 14px;
 }
 #font-weight {
   tag: 400;
@@ -2519,10 +2519,10 @@ html {
 }
 #leading {
   tag: normal;
-  heading: 32px;
-  body: 23px;
-  pricing: 32px;
-  old-pricing: 23px;
+  heading: 2.286rem;
+  body: 1.643rem;
+  pricing: 2.286rem;
+  old-pricing: 1.643rem;
   button: normal;
   footer: normal;
 }
@@ -2538,28 +2538,28 @@ html {
   font-weight: 800;
   font-size: 2.286em;
   letter-spacing: 2.2px;
-  line-height: 32px;
+  line-height: 2.286rem;
 }
 #bundle .body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1em;
   letter-spacing: 0;
-  line-height: 23px;
+  line-height: 1.643rem;
 }
 #bundle .pricing {
   font-family: 'Fraunces', serif;
   font-weight: 800;
   font-size: 2.286em;
   letter-spacing: 2.2px;
-  line-height: 32px;
+  line-height: 2.286rem;
 }
 #bundle .old-pricing {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 0.929em;
   letter-spacing: 0;
-  line-height: 23px;
+  line-height: 1.643rem;
 }
 #bundle .button {
   font-family: 'Montserrat', sans-serif;
@@ -2571,7 +2571,7 @@ html {
 #bundle .footer {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 1em;
+  font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -2591,7 +2591,7 @@ body {
 @media (min-width: 38em) {
   .product-card {
     width: 600px;
-    height: 450px;
+    min-width: 14em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2606,15 +2606,17 @@ body {
 }
 @media (min-width: 38em) {
   .product-card .product-card__image-wrapper-desktop {
+    height: 100%;
     display: block;
   }
 }
 .product-card .product-card__image {
   border-radius: 10px 10px 0 0;
-  object-fit: contain;
+  object-fit: cover;
 }
 @media (min-width: 38em) {
   .product-card .product-card__image {
+    height: 100%;
     border-radius: 10px 0 0 10px;
   }
 }
@@ -2641,7 +2643,7 @@ body {
   font-weight: 800;
   font-size: 2.286em;
   letter-spacing: 2.2px;
-  line-height: 32px;
+  line-height: 2.286rem;
   color: #1c232b;
   margin-top: 8px;
 }
@@ -2655,7 +2657,7 @@ body {
   font-weight: 400;
   font-size: 1em;
   letter-spacing: 0;
-  line-height: 23px;
+  line-height: 1.643rem;
   color: #6c7289;
   margin-top: 16px;
 }
@@ -2680,7 +2682,7 @@ body {
   font-weight: 800;
   font-size: 2.286em;
   letter-spacing: 2.2px;
-  line-height: 32px;
+  line-height: 2.286rem;
   color: #3d8168;
 }
 .product-card .product-card__price--original {
@@ -2688,7 +2690,7 @@ body {
   font-weight: 400;
   font-size: 0.929em;
   letter-spacing: 0;
-  line-height: 23px;
+  line-height: 1.643rem;
   color: #6c7289;
   margin-left: 16px;
   text-decoration: line-through;
@@ -2731,7 +2733,7 @@ body {
 .attribution {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 1em;
+  font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
   color: #8a735b;
