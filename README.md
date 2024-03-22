@@ -11,10 +11,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screen Shot](./images/pcss.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Product Preview Card Component](https://productpreviewcardfem.netlify.app)
 
 ## My process
 
@@ -53,20 +51,21 @@ Users should be able to:
 - a11y check: interactive elements (tooltips with mouse & keyboard)
 - a11y check: Semantic HTML and screen readers (not yet done)
 - Refactor for dev readibility
+- Deploy
 
 ### Built with
 
 - Semantic HTML5 markup
 - Less
+- BEM
 - Flexbox
+- Grid
 - Mobile-first workflow
 
 ### What I learned
 
 - I learned how to use Less
 - I learned how to add a tooltip on an element when it's focus from the keyboard
-
-### Continued development
 
 ### Useful resources
 
@@ -80,5 +79,3 @@ Users should be able to:
 - GitHub - [Steve Xero](https://www.github.com/stevexero)
 - Frontend Mentor - [@stevexero](https://www.frontendmentor.io/profile/stevexero)
 - X - [@steve_xero](https://www.twitter.com/steve_xero)
-
-## Acknowledgments
