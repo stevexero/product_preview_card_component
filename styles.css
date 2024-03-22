@@ -2457,121 +2457,52 @@ h6 {
 html {
   font-size: 14px;
 }
-#font-families {
-  primary: 'Montserrat', sans-serif;
-  secondary: 'Fraunces', serif;
-}
-#font-sizes {
-  large: 2.286em;
-  medium: 1em;
-  small: 0.929em;
-  extra-small: 0.857em;
-}
-#font-weights {
-  bold: 800;
-  medium: 400;
-}
-#text-tracking {
-  wide: 5px;
-  semi-wide: 2.2px;
-  normal: 0;
-}
-#text-leading {
-  auto: normal;
-  large: 2.286rem;
-  medium: 1.643rem;
-}
-#font-family {
-  tag: 'Montserrat', sans-serif;
-  heading: 'Fraunces', serif;
-  body: 'Montserrat', sans-serif;
-  pricing: 'Fraunces', serif;
-  old-pricing: 'Montserrat', sans-serif;
-  button: 'Montserrat', sans-serif;
-  footer: 'Montserrat', sans-serif;
-}
-#font-size {
-  tag: 0.857em;
-  heading: 2.286em;
-  body: 1em;
-  pricing: 2.286em;
-  old-pricing: 0.929em;
-  button: 1em;
-  footer: 14px;
-}
-#font-weight {
-  tag: 400;
-  heading: 800;
-  body: 400;
-  pricing: 800;
-  old-pricing: 400;
-  button: 800;
-  footer: 800;
-}
-#tracking {
-  tag: 5px;
-  heading: 2.2px;
-  body: 0;
-  pricing: 2.2px;
-  old-pricing: 0;
-  button: 0;
-  footer: 0;
-}
-#leading {
-  tag: normal;
-  heading: 2.286rem;
-  body: 1.643rem;
-  pricing: 2.286rem;
-  old-pricing: 1.643rem;
-  button: normal;
-  footer: normal;
-}
-#bundle .tag {
+.tag {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 0.857em;
+  font-weight: 400;
   letter-spacing: 5px;
   line-height: normal;
 }
-#bundle .heading {
+.heading {
   font-family: 'Fraunces', serif;
-  font-weight: 800;
   font-size: 2.286em;
+  font-weight: 800;
   letter-spacing: 2.2px;
   line-height: 2.286rem;
 }
-#bundle .body {
+.body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 1em;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.643rem;
 }
-#bundle .pricing {
+.pricing {
   font-family: 'Fraunces', serif;
-  font-weight: 800;
   font-size: 2.286em;
+  font-weight: 800;
   letter-spacing: 2.2px;
   line-height: 2.286rem;
 }
-#bundle .old-pricing {
+.old-pricing {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 0.929em;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.643rem;
 }
-#bundle .button {
+.button {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
   font-size: 1em;
+  font-weight: 800;
   letter-spacing: 0;
   line-height: normal;
 }
-#bundle .footer {
+.footer {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
   font-weight: 800;
-  font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -2597,116 +2528,116 @@ body {
   }
 }
 @media (min-width: 38em) {
-  .product-card .product-card__image-wrapper-mobile {
+  .product-card__image-wrapper-mobile {
     display: none;
   }
 }
-.product-card .product-card__image-wrapper-desktop {
+.product-card__image-wrapper-desktop {
   display: none;
 }
 @media (min-width: 38em) {
-  .product-card .product-card__image-wrapper-desktop {
+  .product-card__image-wrapper-desktop {
     height: 100%;
     display: block;
   }
 }
-.product-card .product-card__image {
+.product-card__image {
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
 @media (min-width: 38em) {
-  .product-card .product-card__image {
+  .product-card__image {
     height: 100%;
     border-radius: 10px 0 0 10px;
   }
 }
-.product-card .product-card__content-container {
+.product-card__content-container {
   padding: 24px;
 }
 @media (min-width: 38em) {
-  .product-card .product-card__content-container {
+  .product-card__content-container {
     padding: 32px;
     align-self: center;
   }
 }
-.product-card .product-card__tag {
+.product-card__tag {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 0.857em;
+  font-weight: 400;
   letter-spacing: 5px;
   line-height: normal;
   color: #6c7289;
   text-decoration: none;
 }
-.product-card .product-card__title {
+.product-card__title {
   font-family: 'Fraunces', serif;
-  font-weight: 800;
   font-size: 2.286em;
+  font-weight: 800;
   letter-spacing: 2.2px;
   line-height: 2.286rem;
   color: #1c232b;
   margin-top: 8px;
 }
 @media (min-width: 38em) {
-  .product-card .product-card__title {
+  .product-card__title {
     margin-top: 16px;
   }
 }
-.product-card .product-card__text {
+.product-card__text {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 1em;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.643rem;
   color: #6c7289;
   margin-top: 16px;
 }
 @media (min-width: 38em) {
-  .product-card .product-card__text {
+  .product-card__text {
     margin-top: 24px;
   }
 }
-.product-card .product-card__pricing {
+.product-card__pricing {
   margin-top: 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 @media (min-width: 38em) {
-  .product-card .product-card__pricing {
+  .product-card__pricing {
     margin-top: 28px;
   }
 }
-.product-card .product-card__price--sale {
+.product-card__price--sale {
   font-family: 'Fraunces', serif;
-  font-weight: 800;
   font-size: 2.286em;
+  font-weight: 800;
   letter-spacing: 2.2px;
   line-height: 2.286rem;
   color: #3d8168;
 }
-.product-card .product-card__price--original {
+.product-card__price--original {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 0.929em;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.643rem;
   color: #6c7289;
   margin-left: 16px;
   text-decoration: line-through;
 }
-.product-card .product-card__footer {
+.product-card__footer {
   margin-top: 24px;
 }
 @media (min-width: 38em) {
-  .product-card .product-card__footer {
+  .product-card__footer {
     margin-top: 28px;
   }
 }
-.product-card .product-card__button {
+.product-card__button {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
   font-size: 1em;
+  font-weight: 800;
   letter-spacing: 0;
   line-height: normal;
   width: 100%;
@@ -2721,22 +2652,22 @@ body {
   justify-content: center;
   position: relative;
 }
-.product-card .product-card__button:hover {
+.product-card__button:hover {
   background-color: #1a4032;
   cursor: pointer;
 }
-.product-card .product-card__button:focus {
+.product-card__button:focus {
   background-color: #1a4032;
 }
-.product-card .product-card__button:focus .product-card__tooltip-text,
-.product-card .product-card__button.show-tooltip .product-card__tooltip-text {
+.product-card__button:focus .product-card__tooltip-text,
+.product-card__button.show-tooltip .product-card__tooltip-text {
   visibility: visible;
   opacity: 1;
 }
-.product-card .product-card__button span {
+.product-card__button span {
   margin-left: 11px;
 }
-.product-card .product-card__tooltip-text {
+.product-card__tooltip-text {
   font-weight: 200;
   visibility: hidden;
   width: 400px;
@@ -2752,8 +2683,8 @@ body {
 }
 .attribution {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
   font-weight: 800;
-  font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
   color: #8a735b;

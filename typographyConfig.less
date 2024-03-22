@@ -1,145 +1,216 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+// Base font size
+@base-font-size: 14px;
+
+// Font families
+@font-family-primary: 'Montserrat', sans-serif;
+@font-family-secondary: 'Fraunces', serif;
+
+// Font sizes
+@font-size-large: 2.286em;
+@font-size-medium: 1em;
+@font-size-small: 0.929em;
+@font-size-extra-small: 0.857em;
+
+// Font weights
+@font-weight-bold: 800;
+@font-weight-medium: 400;
+
+// Text tracking
+@text-tracking-wide: 5px;
+@text-tracking-semi-wide: 2.2px;
+@text-tracking-normal: 0;
+
+// Text leading
+@text-leading-large: 2.286rem; // 32px
+@text-leading-medium: 1.643rem; // 23px
+@text-leading-auto: normal;
+
 html {
-  font-size: 14px;
+  font-size: @base-font-size;
 }
 
-// Variables
-#font-families {
-  primary: 'Montserrat', sans-serif;
-  secondary: 'Fraunces', serif;
+// Mixins
+.textStyle(@family, @size, @weight, @tracking, @leading) {
+  font-family: @family;
+  font-size: @size;
+  font-weight: @weight;
+  letter-spacing: @tracking;
+  line-height: @leading;
 }
 
-#font-sizes {
-  large: 2.286em;
-  medium: 1em;
-  small: 0.929em;
-  extra-small: 0.857em;
+// Usage
+.tag {
+  .textStyle(@font-family-primary, @font-size-extra-small, @font-weight-medium, @text-tracking-wide, @text-leading-auto);
 }
 
-#font-weights {
-  bold: 800;
-  medium: 400;
+.heading {
+  .textStyle(@font-family-secondary, @font-size-large, @font-weight-bold, @text-tracking-semi-wide, @text-leading-large);
 }
 
-#text-tracking {
-  wide: 5px;
-  semi-wide: 2.2px;
-  normal: 0;
+.body {
+  .textStyle(@font-family-primary, @font-size-medium, @font-weight-medium, @text-tracking-normal, @text-leading-medium);
 }
 
-#text-leading {
-  auto: normal;
-  large: 2.286rem; // 32px
-  medium: 1.643rem; // 23px
+.pricing {
+  .textStyle(@font-family-secondary, @font-size-large, @font-weight-bold, @text-tracking-semi-wide, @text-leading-large);
 }
 
-// Assignments
-#font-family {
-  tag: #font-families[primary];
-  heading: #font-families[secondary];
-  body: #font-families[primary];
-  pricing: #font-families[secondary];
-  old-pricing: #font-families[primary];
-  button: #font-families[primary];
-  footer: #font-families[primary];
+.old-pricing {
+  .textStyle(@font-family-primary, @font-size-small, @font-weight-medium, @text-tracking-normal, @text-leading-medium);
 }
 
-#font-size {
-  tag: #font-sizes[extra-small];
-  heading: #font-sizes[large];
-  body: #font-sizes[medium];
-  pricing: #font-sizes[large];
-  old-pricing: #font-sizes[small];
-  button: #font-sizes[medium];
-  footer: 14px;
+.button {
+  .textStyle(@font-family-primary, @font-size-medium, @font-weight-bold, @text-tracking-normal, @text-leading-auto);
 }
 
-#font-weight {
-  tag: #font-weights[medium];
-  heading: #font-weights[bold];
-  body: #font-weights[medium];
-  pricing: #font-weights[bold];
-  old-pricing: #font-weights[medium];
-  button: #font-weights[bold];
-  footer: #font-weights[bold];
+.footer {
+  .textStyle(@font-family-primary, @font-size-medium, @font-weight-bold, @text-tracking-normal, @text-leading-auto);
 }
 
-#tracking {
-  tag: #text-tracking[wide];
-  heading: #text-tracking[semi-wide];
-  body: #text-tracking[normal];
-  pricing: #text-tracking[semi-wide];
-  old-pricing: #text-tracking[normal];
-  button: #text-tracking[normal];
-  footer: #text-tracking[normal];
-}
+// @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-#leading {
-  tag: #text-leading[auto];
-  heading: #text-leading[large];
-  body: #text-leading[medium];
-  pricing: #text-leading[large];
-  old-pricing: #text-leading[medium];
-  button: #text-leading[auto];
-  footer: #text-leading[auto];
-}
+// html {
+//   font-size: 14px;
+// }
 
-// Rule Sets
-#bundle {
-  .tag {
-    font-family: #font-family[tag];
-    font-weight: #font-weight[tag];
-    font-size: #font-size[tag];
-    letter-spacing: #tracking[tag];
-    line-height: #leading[tag];
-  }
+// // Variables
+// #font-families {
+//   primary: 'Montserrat', sans-serif;
+//   secondary: 'Fraunces', serif;
+// }
 
-  .heading {
-    font-family: #font-family[heading];
-    font-weight: #font-weight[heading];
-    font-size: #font-size[heading];
-    letter-spacing: #tracking[heading];
-    line-height: #leading[heading];
-  }
+// #font-sizes {
+//   large: 2.286em;
+//   medium: 1em;
+//   small: 0.929em;
+//   extra-small: 0.857em;
+// }
 
-  .body {
-    font-family: #font-family[body];
-    font-weight: #font-weight[body];
-    font-size: #font-size[body];
-    letter-spacing: #tracking[body];
-    line-height: #leading[body];
-  }
+// #font-weights {
+//   bold: 800;
+//   medium: 400;
+// }
 
-  .pricing {
-    font-family: #font-family[pricing];
-    font-weight: #font-weight[pricing];
-    font-size: #font-size[pricing];
-    letter-spacing: #tracking[pricing];
-    line-height: #leading[pricing];
-  }
+// #text-tracking {
+//   wide: 5px;
+//   semi-wide: 2.2px;
+//   normal: 0;
+// }
 
-  .old-pricing {
-    font-family: #font-family[old-pricing];
-    font-weight: #font-weight[old-pricing];
-    font-size: #font-size[old-pricing];
-    letter-spacing: #tracking[old-pricing];
-    line-height: #leading[old-pricing];
-  }
+// #text-leading {
+//   auto: normal;
+//   large: 2.286rem; // 32px
+//   medium: 1.643rem; // 23px
+// }
 
-  .button {
-    font-family: #font-family[button];
-    font-weight: #font-weight[button];
-    font-size: #font-size[button];
-    letter-spacing: #tracking[button];
-    line-height: #leading[button];
-  }
+// // Assignments
+// #font-family {
+//   tag: #font-families[primary];
+//   heading: #font-families[secondary];
+//   body: #font-families[primary];
+//   pricing: #font-families[secondary];
+//   old-pricing: #font-families[primary];
+//   button: #font-families[primary];
+//   footer: #font-families[primary];
+// }
 
-  .footer {
-    font-family: #font-family[footer];
-    font-weight: #font-weight[footer];
-    font-size: #font-size[footer];
-    letter-spacing: #tracking[footer];
-    line-height: #leading[footer];
-  }
-}
+// #font-size {
+//   tag: #font-sizes[extra-small];
+//   heading: #font-sizes[large];
+//   body: #font-sizes[medium];
+//   pricing: #font-sizes[large];
+//   old-pricing: #font-sizes[small];
+//   button: #font-sizes[medium];
+//   footer: 14px;
+// }
+
+// #font-weight {
+//   tag: #font-weights[medium];
+//   heading: #font-weights[bold];
+//   body: #font-weights[medium];
+//   pricing: #font-weights[bold];
+//   old-pricing: #font-weights[medium];
+//   button: #font-weights[bold];
+//   footer: #font-weights[bold];
+// }
+
+// #tracking {
+//   tag: #text-tracking[wide];
+//   heading: #text-tracking[semi-wide];
+//   body: #text-tracking[normal];
+//   pricing: #text-tracking[semi-wide];
+//   old-pricing: #text-tracking[normal];
+//   button: #text-tracking[normal];
+//   footer: #text-tracking[normal];
+// }
+
+// #leading {
+//   tag: #text-leading[auto];
+//   heading: #text-leading[large];
+//   body: #text-leading[medium];
+//   pricing: #text-leading[large];
+//   old-pricing: #text-leading[medium];
+//   button: #text-leading[auto];
+//   footer: #text-leading[auto];
+// }
+
+// // Rule Sets
+// #bundle {
+//   .tag {
+//     font-family: #font-family[tag];
+//     font-weight: #font-weight[tag];
+//     font-size: #font-size[tag];
+//     letter-spacing: #tracking[tag];
+//     line-height: #leading[tag];
+//   }
+
+//   .heading {
+//     font-family: #font-family[heading];
+//     font-weight: #font-weight[heading];
+//     font-size: #font-size[heading];
+//     letter-spacing: #tracking[heading];
+//     line-height: #leading[heading];
+//   }
+
+//   .body {
+//     font-family: #font-family[body];
+//     font-weight: #font-weight[body];
+//     font-size: #font-size[body];
+//     letter-spacing: #tracking[body];
+//     line-height: #leading[body];
+//   }
+
+//   .pricing {
+//     font-family: #font-family[pricing];
+//     font-weight: #font-weight[pricing];
+//     font-size: #font-size[pricing];
+//     letter-spacing: #tracking[pricing];
+//     line-height: #leading[pricing];
+//   }
+
+//   .old-pricing {
+//     font-family: #font-family[old-pricing];
+//     font-weight: #font-weight[old-pricing];
+//     font-size: #font-size[old-pricing];
+//     letter-spacing: #tracking[old-pricing];
+//     line-height: #leading[old-pricing];
+//   }
+
+//   .button {
+//     font-family: #font-family[button];
+//     font-weight: #font-weight[button];
+//     font-size: #font-size[button];
+//     letter-spacing: #tracking[button];
+//     line-height: #leading[button];
+//   }
+
+//   .footer {
+//     font-family: #font-family[footer];
+//     font-weight: #font-weight[footer];
+//     font-size: #font-size[footer];
+//     letter-spacing: #tracking[footer];
+//     line-height: #leading[footer];
+//   }
+// }
