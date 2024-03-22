@@ -2501,7 +2501,7 @@ html {
 }
 .footer {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0;
   line-height: normal;
@@ -2683,7 +2683,7 @@ body {
 }
 .attribution {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0;
   line-height: normal;
